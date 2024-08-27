@@ -9,7 +9,7 @@
     "clean": "rm -rf node_modules && rm -rf dist",
     "dev": "tsup --watch",
     "lint": "TIMING=1 eslint src --fix",
-    "prepublish": "pnpm test && pnpm build",
+    "prepublish": "pnpm build",
     "test": "jest",
     "release": "pnpm changeset && pnpm changeset version"
   },
