@@ -27,8 +27,21 @@ import { NodeDreamMachineAPI } from 'node-dream-machine-api';
 Then, create an instance of the API with your access token:
 
 ```typescript
-const api = new NodeDreamMachineAPI('your_access_token_here');
+const api = new NodeDreamMachineAPI('your luma_session here');
 ```
+
+To find your luma session id, you need to:
+
+1. Login to lumalabs.ai
+2. Right click on the page and click "inspect"
+3. Go to Application in the dev tools
+4. Find "https://lumalabs.ai under cookies
+4. Click on luma_session
+5. Copy the cookie value - that is your luma session id!
+
+
+![Screenshot](./image/screenshot.png)
+
 
 ## API Reference
 
